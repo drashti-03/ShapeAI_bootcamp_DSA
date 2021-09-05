@@ -1,0 +1,18 @@
+#include<iostream>
+using namespace std;
+int a, b;
+
+void swap_pointer(int* a, int* b){
+int temp = *a;  
+   *a = *b;       
+   *b = temp;      
+ }  
+ 
+ int main(){
+    
+  cout<<"enter two numbers: "<<a<<b<<endl; 
+  cin>>x>>y;
+  swapPointer(&a , &b);
+  cout<<"the swaped numbers are: "<<a <<endl << b;
+  return 0;
+}
