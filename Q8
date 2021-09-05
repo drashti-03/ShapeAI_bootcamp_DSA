@@ -1,0 +1,24 @@
+#include <iostream>
+#include <vector>
+using namespace std;
+
+int main() {
+  int n, a;
+
+  cin >> n;
+  cin >> a;
+
+  vector<int> arr;
+  for (int i = 0; i < n; i++) {
+    int tmp;
+    cin >> tmp;
+    arr.push_back(tmp);
+  }
+
+  for (int i = 0; i < n; i++) {
+    cout << arr[(i + a) % n] << " ";
+  }
+
+  return 0;
+
+}
